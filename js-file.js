@@ -7,9 +7,29 @@ let a = 0;
 let b = 0;
 let operator = null;
 
-function operate() {
-
+function operate(a, b, operator) {
+    switch (operator) {
+        case '+': 
+            return add(a, b);
+        case '-': 
+            return subtract(a, b);
+        case '*': 
+            return multiply(a, b);
+        case '/': 
+            if (b !== 0) {
+                return divide(a, b)
+            } else {
+                return 'Error: Divide by 0'
+            }
+        default: 
+            return 'Invalid operator';
+    }
 }
+//check
+a = 10;
+b = 4;
+operator = '+';
+console.log(operate(a, b, operator)) //check
 
 const display = document.querySelector('.display');
 
