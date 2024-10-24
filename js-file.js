@@ -17,3 +17,4 @@ function clearDisplay() {
     const clearButton = document.querySelector('#clear');
     clearButton.addEventListener('click', () => display.innerHTML = '');
 }
+clearDisplay();
