@@ -32,9 +32,16 @@ operator = '+';
 console.log(operate(a, b, operator)) //check
 
 const display = document.querySelector('.display');
+let displayValue = '0';
 
 function clearDisplay() {
     const clearButton = document.querySelector('#clear');
     clearButton.addEventListener('click', () => display.innerHTML = '0');
 }
 clearDisplay();
+
+function updateDisplay(value) {
+    displayValue += value;
+    display.texContent = displayValue;
+}
+updateDisplay()
