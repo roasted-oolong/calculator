@@ -13,7 +13,7 @@ function operate() {
 
 const display = document.querySelector('.display');
 
-function clear() {
-    const clear = document.querySelector('#clear');
-    clear.addEventListener('click', () => display.innerHTML = '');
+function clearDisplay() {
+    const clearButton = document.querySelector('#clear');
+    clearButton.addEventListener('click', () => display.innerHTML = '');
 }
