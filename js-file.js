@@ -44,6 +44,16 @@ function updateDisplay(value) {
     displayValue += value;
     display.texContent = displayValue;
 }
-updateDisplay()
 
 const numberButtons = document.querySelectorAll('.number');
+numberButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const number = button.textContent;
+        if (displayValue === '0') {
+            displayValue = number;
+        } else {
+            displayValue += number;
+        }
+    updateDisplay(displayValue);
+    })
+})
