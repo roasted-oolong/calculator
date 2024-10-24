@@ -10,3 +10,10 @@ let operator = null;
 function operate() {
 
 }
+
+const display = document.querySelector('.display');
+
+function clear() {
+    const clear = document.querySelector('#clear');
+    clear.addEventListener('click', () => display.innerHTML = '');
+}
