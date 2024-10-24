@@ -45,3 +45,5 @@ function updateDisplay(value) {
     display.texContent = displayValue;
 }
 updateDisplay()
+
+const numberButtons = document.querySelectorAll('.number');
